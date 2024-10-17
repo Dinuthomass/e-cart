@@ -57,7 +57,7 @@ function Home() {
        <Row className='mt-5 ms-5' >
        {
         products?.length>0?products.map((product,index)=>(
-          <Col key={index} className='mt-5' sm={12} md={6} lg={4} xl={3}>
+          <Col key={index} className='mt-5 d-flex justify-content-center' sm={12} md={6} lg={4} xl={3}>
        <Card style={{ width: '18rem',height:"380px"}}>
      <Link to={`/view/${product.id}`}><Card.Img variant="top" style={{width:"100%",height:"200px"}} src={product.thumbnail} /></Link>
      <Card.Body>

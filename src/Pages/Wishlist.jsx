@@ -22,7 +22,7 @@ function Wishlist() {
       <Row className='mt-5 ms-5 container' >
        {
          wishlist?.length>0?wishlist.map(product=>(
-          <Col className='mt-5' sm={12} md={6} lg={4} xl={3}>
+          <Col className='mt-5 d-flex justify-content-center' sm={12} md={6} lg={4} xl={3}>
          <Card style={{ width: '18rem',height:"600px"}}>
        <Link to='/view/1'><Card.Img variant="top" style={{width:"100%"}} src={product.thumbnail} /></Link>
        <Card.Body>
